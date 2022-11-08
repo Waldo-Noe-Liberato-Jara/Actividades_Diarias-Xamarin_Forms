@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Entregable_v04.Vista.VActualizar"
+              NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="#403E3E">
+
+            <Frame HeightRequest="50" BackgroundColor="{StaticResource Rojo}">
+                <StackLayout Orientation="Horizontal">
+                    <Image Source="flecha.png" HeightRequest="30" HorizontalOptions="StartAndExpand">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"></TapGestureRecognizer>
+                        </Image.GestureRecognizers>
+                    </Image>
+                    <Label Text="LIBERATO" TextColor="{StaticResource Blanco}" FontAttributes="Bold" FontSize="Title" HorizontalOptions="EndAndExpand"/>
+                </StackLayout>
+            </Frame>
+
+            <StackLayout Orientation="Horizontal" Margin="30, 20, 20, 5" HorizontalOptions="FillAndExpand">
+                <Label Text="Editar" TextColor="{StaticResource Blanco}" FontAttributes="Bold" FontSize="Title" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" HorizontalOptions="Start"></Label>
+            </StackLayout>
+
+            <Frame Padding="0" Margin="10,10,10,10" CornerRadius="10">
+                <Grid BackgroundColor="{StaticResource Blanco}" RowDefinitions="*, *" Padding="15, 0, 15, 0">
+                    <Label Text="Actividad" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4" HorizontalTextAlignment="Start" VerticalOptions="Center" TextColor="{StaticResource Rojo}" FontAttributes="Bold"></Label>
+                    <Entry x:Name="TxtActividad" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="4" HorizontalTextAlignment="Start" VerticalTextAlignment="Center" TextColor="{StaticResource Negro}"></Entry>
+                    <Label Text="Fecha de Inicio" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" HorizontalTextAlignment="Start" VerticalOptions="Center" TextColor="{StaticResource Rojo}" FontAttributes="Bold"></Label>
+                    <DatePicker x:Name="TxtFechaInicio" Grid.Row="3" Grid.Column="0" Style="{StaticResource Fechas}"></DatePicker>
+                    <Label Text="Fecha de Fin" Grid.Row="2" Grid.Column="2" Grid.ColumnSpan="2" HorizontalTextAlignment="End" VerticalOptions="Center" TextColor="{StaticResource Rojo}" FontAttributes="Bold"></Label>
+                    <DatePicker x:Name="TxtFechaFin" Grid.Row="3" Grid.Column="3" Style="{StaticResource Fechas}"></DatePicker>
+                </Grid>
+            </Frame>
+            <Button Clicked="Button_Clicked_1" Text="Actualizar" Style="{StaticResource Estilo_Boton}"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

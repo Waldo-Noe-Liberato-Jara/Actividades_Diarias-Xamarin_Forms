@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Entregable_v04.Vista.VActividades"
+             xmlns:sharedTransitions="clr-namespace:Plugin.SharedTransitions;assembly=Plugin.SharedTransitions"
+             NavigationPage.HasNavigationBar="False">
+
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="#403E3E">
+
+            <Frame HeightRequest="50" BackgroundColor="{StaticResource Rojo}">
+                <Label Text="LIBERATO" TextColor="{StaticResource Blanco}" FontAttributes="Bold" FontSize="Title" HorizontalOptions="End"/>
+            </Frame>
+
+            <SearchBar Placeholder="Buscar por actividad" TextChanged="SearchBar_TextChanged" PlaceholderColor="gray" TextColor="{StaticResource Blanco}" CancelButtonColor="{StaticResource Rojo}"></SearchBar>
+
+            <StackLayout Orientation="Horizontal" Margin="30, 20, 20, 5" HorizontalOptions="FillAndExpand">
+                <Label Text="Actividades" TextColor="{StaticResource Blanco}" FontAttributes="Bold" FontSize="Title" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" HorizontalOptions="Start"></Label>
+                <Frame Padding="0" BackgroundColor="{StaticResource Blanco}" HorizontalOptions="EndAndExpand" CornerRadius="60" HeightRequest="60" WidthRequest="60">
+                    <Label Text="+" TextColor="{StaticResource Rojo}" FontAttributes="Bold" FontSize="35" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="ToolbarItem_Clicked"></TapGestureRecognizer>
+                    </Frame.GestureRecognizers>
+                </Frame>
+            </StackLayout>
+
+            <ListView x:Name="LV_Actividades" ItemsSource="{Binding Lista_Actividades}" SelectionMode="Single" RowHeight="90" VerticalOptions="FillAndExpand" HeightRequest="90">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <SwipeView>
+                                <SwipeView.RightItems>
+                                    <SwipeItem Text="Editar" CommandParameter="{Binding .}" BackgroundColor="Yellow" Invoked="SwipeItem_Invoked"></SwipeItem>
+                                    <SwipeItem Text="Eliminar" CommandParameter="{Binding .}" BackgroundColor="{StaticResource Rojo}" Invoked="SwipeItem_Invoked_1"></SwipeItem>
+                                </SwipeView.RightItems>
+
+                                <Grid BackgroundColor="#fff" RowDefinitions="*, *" Padding="15, 0, 15, 0">
+                                    <Label Text="{Binding Actividad}" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4" HorizontalTextAlignment="Start" VerticalTextAlignment="Center" FontSize="Subtitle" FontAttributes="Bold" TextColor="{StaticResource Rojo}"></Label>
+                                    <Label Text="{Binding Fecha_Creacion}" Grid.Row="1" Grid.Column="0" HorizontalOptions="StartAndExpand" FontSize="Caption" Opacity=".8" TextColor="{StaticResource Negro}"></Label>
+                                    <Label Text="{Binding Fecha_Inicio}" Grid.Row="1" Grid.Column="2" HorizontalOptions="EndAndExpand" FontSize="Caption" Opacity=".5" TextColor="{StaticResource Negro}"></Label>
+                                    <Label Text="{Binding Fecha_Fin}" Grid.Row="1" Grid.Column="3" HorizontalOptions="EndAndExpand" FontSize="Caption" Opacity=".5" TextColor="{StaticResource Negro}"></Label>
+                                </Grid>
+                            </SwipeView>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
+        </StackLayout>
+    </ContentPage.Content>
+
+</ContentPage>

@@ -1,0 +1,17 @@
+C:\Users\Waldo\source\repos\Entregable_v04\Entregable_v04\bin\Debug\netstandard2.0\Entregable_v04.deps.json
+C:\Users\Waldo\source\repos\Entregable_v04\Entregable_v04\bin\Debug\netstandard2.0\Entregable_v04.dll
+C:\Users\Waldo\source\repos\Entregable_v04\Entregable_v04\bin\Debug\netstandard2.0\ref\Entregable_v04.dll
+C:\Users\Waldo\source\repos\Entregable_v04\Entregable_v04\bin\Debug\netstandard2.0\Entregable_v04.pdb
+C:\Users\Waldo\source\repos\Entregable_v04\Entregable_v04\obj\Debug\netstandard2.0\Entregable_v04.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Waldo\source\repos\Entregable_v04\Entregable_v04\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\Waldo\source\repos\Entregable_v04\Entregable_v04\obj\Debug\netstandard2.0\Vista\VActividades.xaml.g.cs
+C:\Users\Waldo\source\repos\Entregable_v04\Entregable_v04\obj\Debug\netstandard2.0\Vista\VActualizar.xaml.g.cs
+C:\Users\Waldo\source\repos\Entregable_v04\Entregable_v04\obj\Debug\netstandard2.0\Vista\VAgregar.xaml.g.cs
+C:\Users\Waldo\source\repos\Entregable_v04\Entregable_v04\obj\Debug\netstandard2.0\Entregable_v04.AssemblyInfoInputs.cache
+C:\Users\Waldo\source\repos\Entregable_v04\Entregable_v04\obj\Debug\netstandard2.0\Entregable_v04.AssemblyInfo.cs
+C:\Users\Waldo\source\repos\Entregable_v04\Entregable_v04\obj\Debug\netstandard2.0\Entregable_v04.csproj.CoreCompileInputs.cache
+C:\Users\Waldo\source\repos\Entregable_v04\Entregable_v04\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\Waldo\source\repos\Entregable_v04\Entregable_v04\obj\Debug\netstandard2.0\Entregable_v04.dll
+C:\Users\Waldo\source\repos\Entregable_v04\Entregable_v04\obj\Debug\netstandard2.0\ref\Entregable_v04.dll
+C:\Users\Waldo\source\repos\Entregable_v04\Entregable_v04\obj\Debug\netstandard2.0\Entregable_v04.pdb
+C:\Users\Waldo\source\repos\Entregable_v04\Entregable_v04\obj\Debug\netstandard2.0\Entregable_v04.csproj.AssemblyReference.cache

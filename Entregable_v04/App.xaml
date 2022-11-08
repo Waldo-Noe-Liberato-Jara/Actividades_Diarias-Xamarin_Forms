@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Entregable_v04.App">
+    <Application.Resources>
+        <!--Colores-->
+        <Color x:Key="Rojo">#D80000</Color>
+        <Color x:Key="Blanco">#FCFAFA</Color>
+        <Color x:Key="Negro">#110202</Color>
+        <!--Estilos-->
+        <Style x:Key="Estilo_Boton" TargetType="Button">
+            <Setter Property="BackgroundColor" Value="{StaticResource Rojo}"></Setter>
+            <Setter Property="TextColor" Value="{StaticResource Blanco}"></Setter>
+            <Setter Property="CornerRadius" Value="10"></Setter>
+            <Setter Property="Margin" Value="10,10,10,10"></Setter>
+        </Style>
+        <Style x:Key="Fechas" TargetType="DatePicker">
+            <Setter Property="Format" Value="dd-MM-yyyy"></Setter>
+            <Setter Property="HorizontalOptions" Value="CenterAndExpand"></Setter>
+            <Setter Property="FontSize" Value="Caption"></Setter>
+            <Setter Property="Opacity" Value=".8"></Setter>
+            <Setter Property="TextColor" Value="{StaticResource Negro}"></Setter>
+        </Style>
+    </Application.Resources>
+</Application>
